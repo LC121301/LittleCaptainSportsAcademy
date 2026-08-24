@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Captain Sports Academy | Cricket & Football</title>
+<meta name="description" content="Little Captain Sports Academy offers personal sports coaching for kids, youth and seniors, cricket and football tournament grounds, and cricket equipment and kits.">
+<style>
+:root{
+  --navy:#081b33; --blue:#1261a0; --green:#18a558; --gold:#f5b942;
+  --light:#f5f8fb; --white:#fff; --text:#172235; --muted:#607087;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(8,27,51,.96);color:#fff}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.35rem;font-weight:800;display:flex;gap:9px;align-items:center}
+.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:25px;font-weight:600;font-size:.94rem}
+.navlinks a:hover{color:var(--gold)}
+.hero{min-height:650px;background:linear-gradient(90deg,rgba(8,27,51,.95),rgba(8,27,51,.55)),url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;color:white}
+.hero-content{max-width:720px;padding:80px 0}
+.badge{display:inline-block;background:rgba(245,185,66,.15);border:1px solid var(--gold);color:#ffd56b;padding:7px 13px;border-radius:30px;font-weight:700;font-size:.85rem;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;margin-bottom:22px}
+.hero p{font-size:1.15rem;color:#e7eef7;max-width:650px;margin-bottom:30px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:800;margin:5px 7px 5px 0;transition:.2s}
+.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{transform:translateY(-2px)}
+.btn-outline{border:1px solid #fff;color:#fff}.btn-outline:hover{background:#fff;color:var(--navy)}
+section{padding:82px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font-size:2.25rem;color:var(--navy);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(8,27,51,.07);border:1px solid #e7edf3}
+.icon{font-size:2.2rem;margin-bottom:14px}
+.card h3{color:var(--navy);margin-bottom:8px;font-size:1.25rem}
+.card p{color:var(--muted)}
+.audience{background:#fff}
+.audience .card{border-top:4px solid var(--green)}
+.feature{background:var(--navy);color:#fff}
+.feature .section-head h2{color:#fff}.feature .section-head p{color:#c9d6e5}
+.feature .card{background:#102d4e;border-color:#244565;color:#fff}
+.feature .card h3{color:#fff}.feature .card p{color:#c9d6e5}
+.shop{background:#f0f7f3}
+.product{display:flex;align-items:center;gap:20px}
+.product .icon{margin:0}
+.cta{background:linear-gradient(120deg,var(--green),#087f48);color:#fff;text-align:center}
+.cta h2{font-size:2.3rem;margin-bottom:12px}
+.cta p{max-width:700px;margin:0 auto 25px;color:#e7fff1}
+.contact{background:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-box{background:var(--light);padding:28px;border-radius:15px}
+.contact-box h3{color:var(--navy);margin-bottom:12px}
+.contact-box p{margin:7px 0;color:var(--muted)}
+footer{background:#061426;color:#aebed0;padding:28px 0;text-align:center;font-size:.9rem}
+@media(max-width:800px){
+ .navlinks{display:none}.grid,.contact-grid{grid-template-columns:1fr}
+ .hero{min-height:590px}.hero-content{padding:60px 0}
+ section{padding:62px 0}
+}
+
+input, select, textarea{
+  width:100%;padding:12px 13px;border:1px solid #d6dee8;border-radius:8px;
+  font:inherit;background:#fff;color:var(--text)
+}
+textarea{resize:vertical}
+form p{margin:0 0 10px}
+form .btn{border:0;cursor:pointer}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container navbar">
+    <a class="logo" href="#home">🏏 Little Captain <span>Sports Academy</span></a>
+    <div class="navlinks">
+      <a href="#coaching">Coaching</a>
+      <a href="#facilities">Grounds</a>
+      <a href="#shop">Cricket Shop</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-content">
+    <div class="badge">TRAIN • PLAY • COMPETE • GROW</div>
+    <h1>Build Skills.<br>Build Confidence.<br>Build Champions.</h1>
+    <p>Little Captain Sports Academy provides personalised sports coaching for kids, youth and seniors, professional cricket training, tournament grounds for cricket and football, and quality cricket instruments & kits.</p>
+    <a class="btn btn-primary" href="#contact">Book a Coaching Session</a>
+    <a class="btn btn-outline" href="#facilities">Explore Our Ground</a>
+  </div>
+</header>
+
+<section id="coaching">
+  <div class="container">
+    <div class="section-head">
+      <h2>Personal Coaching for Every Age</h2>
+      <p>Training designed around the player's age, ability, goals and game.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🧒</div><h3>Kids Coaching</h3>
+        <p>Fun, structured sessions focused on fundamentals, coordination, discipline and a love for sport.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏆</div><h3>Youth Performance</h3>
+        <p>Skill development, match preparation, fitness and advanced cricket coaching for aspiring players.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💪</div><h3>Senior Coaching</h3>
+        <p>Personal training for adults and seniors who want to improve technique, fitness and confidence on the field.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="facilities">
+  <div class="container">
+    <div class="section-head">
+      <h2>Play. Practice. Host Your Tournament.</h2>
+      <p>Our facilities are available for training, matches and organised tournaments.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🏏</div><h3>Cricket Ground</h3>
+        <p>Book the ground for cricket matches, practice sessions, leagues and tournaments.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚽</div><h3>Football Ground</h3>
+        <p>A dedicated venue option for football practice, friendly matches and football tournaments.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📅</div><h3>Tournament Support</h3>
+        <p>Plan your event with ground availability, match scheduling and a sports-focused venue experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="container">
+    <div class="section-head">
+      <h2>Your Cricket Gear, All in One Place</h2>
+      <p>Little Captain Sports Academy also sells cricket instruments and complete cricket kits for players at different levels.</p>
+    </div>
+    <div class="grid">
+      <div class="card product"><div class="icon">🏏</div><div><h3>Cricket Bats</h3><p>Options for beginners, juniors and advanced players.</p></div></div>
+      <div class="card product"><div class="icon">🧤</div><div><h3>Protective Gear</h3><p>Gloves, pads, helmets and essential cricket protection.</p></div></div>
+      <div class="card product"><div class="icon">🎒</div><div><h3>Complete Cricket Kits</h3><p>Convenient kit solutions for training and competitive play.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="audience">
+  <div class="container">
+    <div class="section-head">
+      <h2>Why Little Captain?</h2>
+      <p>A sports academy built around personalised attention and practical game experience.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">🎯</div><h3>Personal Attention</h3><p>Coaching is tailored to individual skill levels and objectives.</p></div>
+      <div class="card"><div class="icon">📈</div><h3>Skill Development</h3><p>Work progressively on technique, fitness, game awareness and confidence.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>For Everyone</h3><p>From young beginners to competitive youth players and active seniors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Take Your Game to the Next Level?</h2>
+    <p>Contact Little Captain Sports Academy for coaching enquiries, cricket equipment, or cricket and football tournament ground bookings.</p>
+    <a class="btn" style="background:#fff;color:#087f48" href="#contact">Get in Touch</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact Little Captain</h2>
+      <p>Replace the placeholder details below with the academy's real contact information.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Academy Enquiries</h3>
+        <p>📞 <strong>Phone:</strong> <a href="tel:+918369738821">+91 83697 38821</a></p>
+        <p>✉️ <strong>Email:</strong> <a href="mailto:littlecaptainsportsacademy@gmail.com">littlecaptainsportsacademy@gmail.com</a></p>
+        <p>📍 <strong>Location:</strong> Add academy address here</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Book / Send an Enquiry</h3>
+        <form action="mailto:littlecaptainsportsacademy@gmail.com" method="post" enctype="text/plain"
+              onsubmit="return prepareMail()">
+          <p><input id="name" name="Name" type="text" placeholder="Your Name *" required></p>
+          <p><input id="phone" name="Phone" type="tel" placeholder="Phone Number *" required></p>
+          <p><select id="service" name="Service" required>
+            <option value="">Select Service *</option>
+            <option>Kids Personal Coaching</option>
+            <option>Youth Personal Coaching</option>
+            <option>Senior Personal Coaching</option>
+            <option>Cricket Ground Booking</option>
+            <option>Football Ground / Tournament Booking</option>
+            <option>Cricket Equipment / Kit Enquiry</option>
+            <option>Other Enquiry</option>
+          </select></p>
+          <p><input id="date" name="Preferred Date" type="date" placeholder="Preferred Date"></p>
+          <p><textarea id="message" name="Message" rows="5" placeholder="Tell us what you need..."></textarea></p>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+        <small style="display:block;margin-top:10px;color:#607087">
+          Your email app will open with the enquiry addressed to Little Captain Sports Academy.
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Little Captain Sports Academy. Train hard. Play smart. Enjoy the game.
+</footer>
+
+<script>
+function prepareMail(){
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const service = document.getElementById('service').value;
+  const date = document.getElementById('date').value;
+  const message = document.getElementById('message').value.trim();
+
+  const subject = encodeURIComponent("Little Captain Sports Academy - " + service);
+  const body = encodeURIComponent(
+    "Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Service: " + service + "\n" +
+    "Preferred Date: " + (date || "Not specified") + "\n" +
+    "Message: " + (message || "No additional message")
+  );
+
+  window.location.href =
+    "mailto:littlecaptainsportsacademy@gmail.com?subject=" + subject + "&body=" + body;
+  return false;
+}
+</script>
+</body>
+</html>
